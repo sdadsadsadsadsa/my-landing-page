@@ -1,5 +1,8 @@
-<html lang="vi"><head>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- BẮT BUỘC cho mobile -->
   <title>Đăng ký thành công</title>
   <style>
     body {
@@ -10,20 +13,25 @@
       align-items: center;
       height: 100vh; 
       margin: 0;
+      padding: 20px; /* Thêm padding nhỏ để không dính viền */
     }
     .success-box {
       background: #fff; 
-      padding: 40px; 
+      padding: 30px; 
       border-radius: 8px; 
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
-      max-width: 400px;
+      max-width: 100%; 
+      width: 100%; 
+      box-sizing: border-box; /* Đảm bảo padding không làm tràn khung */
     }
     .success-box h1 {
       color: #4CAF50; 
+      font-size: 24px; 
     }
     .success-box p {
       line-height: 1.6; 
+      font-size: 16px;
     }
     .success-box a {
       display: inline-block;
@@ -33,6 +41,17 @@
       color: #fff; 
       text-decoration: none;
       border-radius: 4px;
+      font-size: 16px;
+    }
+
+    /* Responsive cho màn lớn hơn */
+    @media (min-width: 600px) {
+      .success-box {
+        max-width: 400px;
+      }
+      .success-box h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
@@ -40,10 +59,9 @@
   <div class="success-box">
     <h1>🎉 Đăng ký thành công!</h1>
     <p>Cảm ơn bạn đã đăng ký nhận <strong>Thực đơn giữ dáng miễn phí</strong> từ chúng tôi.</p>
-    <p>Trong vòng <strong>1 giờ tới</strong>, bạn sẽ nhận được Thực đơn qua facebook  đã đăng ký.</p>
+    <p>Trong vòng <strong>1 giờ tới</strong>, bạn sẽ nhận được Thực đơn qua Facebook đã đăng ký.</p>
     <p>Chúc bạn sớm bắt đầu hành trình giữ dáng khỏe mạnh &amp; tự tin!</p>
-    
+    <a href="index.html">Quay lại Trang chủ</a>
   </div>
-
-
-</body></html>
+</body>
+</html>
