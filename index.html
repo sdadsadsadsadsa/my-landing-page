@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="vi"><head>
+<html lang="vi">
+<head>
   <meta charset="UTF-8">
   <title>Bí quyết ăn uống &amp; giảm cân tuổi 30+</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- thêm dòng này -->
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; }
     header { background: #4CAF50; color: #fff; padding: 20px; }
-    nav a { color: #fff; margin: 0 15px; text-decoration: none; }
-    .hero { text-align: center; padding: 80px 20px; background: #f5f5f5; }
-    .hero h1 { font-size: 36px; }
-    .hero p { font-size: 18px; max-width: 600px; margin: 20px auto; }
-    .hero button { padding: 10px 20px; background: #4CAF50; color: #fff; border: none; cursor: pointer; }
-    .section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    .grid { display: flex; gap: 20px; flex-wrap: wrap; }
-    .grid div { flex: 1; min-width: 250px; background: #eee; padding: 20px; border-radius: 8px; }
-    footer { background: #333; color: #fff; text-align: center; padding: 20px; }
+    nav a { display: inline-block; color: #fff; margin: 5px 10px; text-decoration: none; font-size: 16px; }
+    .hero { text-align: center; padding: 60px 15px; background: #f5f5f5; }
+    .hero h1 { font-size: 24px; }
+    .hero p { font-size: 16px; max-width: 100%; margin: 20px auto; }
+    .hero button { padding: 12px 25px; background: #4CAF50; color: #fff; border: none; cursor: pointer; font-size: 16px; }
+    .section { padding: 40px 15px; max-width: 100%; margin: auto; }
+    .grid { display: flex; flex-direction: column; gap: 15px; }
+    .grid div { background: #eee; padding: 20px; border-radius: 8px; }
+    footer { background: #333; color: #fff; text-align: center; padding: 15px; font-size: 14px; }
+
+    /* Responsive cho tablet trở lên (nếu bạn vẫn muốn hiển thị đẹp) */
+    @media (min-width: 768px) {
+      .hero h1 { font-size: 36px; }
+      .hero p { font-size: 18px; max-width: 600px; }
+      .section { padding: 60px 20px; max-width: 1000px; }
+      .grid { flex-direction: row; flex-wrap: wrap; }
+      .grid div { flex: 1; min-width: 250px; }
+    }
   </style>
 </head>
 <body>
@@ -31,9 +42,8 @@
     <h1>Bí quyết ăn uống &amp; giữ dáng cho tuổi 30+</h1>
     <p>Khám phá thực đơn giảm cân khoa học, mẹo ăn uống lành mạnh, và kế hoạch giữ dáng phù hợp cho phụ nữ bận rộn.</p>
     <a href="https://facebooks.vn/facebook-908" target="_blank">
-  <button>Tải thực đơn miễn phí</button>
-</a>
-
+      <button>Tải thực đơn miễn phí</button>
+    </a>
   </div>
 
   <div class="section">
@@ -57,6 +67,5 @@
   <footer>
     © 2025 Bí quyết Sức khỏe
   </footer>
-
-
-</body></html>
+</body>
+</html>
